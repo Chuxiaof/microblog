@@ -3,7 +3,7 @@ from logging.handlers import SMTPHandler, RotatingFileHandler
 import os
 from config import Config
 from flask import Flask, request
-from flask_babel import Babel
+from flask_babel import Babel, lazy_gettext as _l
 from flask_bootstrap import Bootstrap
 from flask_mail import Mail
 from flask_moment import Moment
